@@ -27,7 +27,9 @@
 {
     [super viewDidLoad];
     
-    self.scroller.contentSize = self.imagen.image.size;
+    //self.scroller.contentSize = self.imagen.image.size;
+    self.imagen.frame=CGRectMake(0, 0, 1680, 1050);
+    self.scroller.contentSize = CGSizeMake(1680, 1050);
     self.scroller.delegate = self;
 }
 
